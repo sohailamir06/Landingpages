@@ -310,11 +310,11 @@
           </a>
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-6">
-            <a href="features.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Features</a>
+            <a href="feature.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Features</a>
             <a href="about.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Why TeamBoard</a>
-            <a href="pricing.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Pricing</a>
-            <a href="landing.html#testimonials" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Testimonials</a>
-            <a href="landing.html#faq" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">FAQ</a>
+            <a href="about.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">About</a>
+            <a href="testimonial.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Testimonials</a>
+            <a href="faq.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">FAQ</a>
           </div>
           <!-- CTA Button -->
           <div class="hidden md:flex items-center space-x-4">
@@ -358,10 +358,16 @@
     </nav>
     <main>
       <!-- FAQ Section -->
-      <section id="faq" class="py-24 bg-gradient-to-b from-gray-50 to-white">
+      <section id="faq" class="relative min-h-screen flex items-center overflow-hidden pt-[8rem]">
+        <!-- Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-purple-50"></div>
+        <div class="absolute inset-0 pattern-dots opacity-30"></div>
+        <!-- Floating Elements -->
+        <div class="absolute top-1/4 left-10 w-20 h-20 bg-primary-200 rounded-full blur-3xl opacity-50 animate-float"></div>
+        <div class="absolute bottom-1/4 right-10 w-32 h-32 bg-purple-200 rounded-full blur-3xl opacity-50 animate-float-delayed"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
-            <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider reveal">FAQ</span>
+            <div class="text-primary-600 font-semibold text-sm uppercase tracking-wider reveal">FAQ</div>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6 reveal stagger-1">
               Frequently asked <span class="gradient-text">questions</span>
             </h2>

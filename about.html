@@ -341,11 +341,11 @@
           </a>
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-6">
-            <a href="features.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Features</a>
+            <a href="feature.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Features</a>
             <a href="about.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Why TeamBoard</a>
-            <a href="pricing.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Pricing</a>
-            <a href="landing.html#testimonials" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Testimonials</a>
-            <a href="landing.html#faq" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">FAQ</a>
+            <a href="about.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">About</a>
+            <a href="testimonial.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">Testimonials</a>
+            <a href="faq.html" class="nav-link text-gray-600 hover:text-primary-600 font-medium transition-colors">FAQ</a>
           </div>
           <!-- CTA Button -->
           <div class="hidden md:flex items-center space-x-4">
@@ -389,59 +389,104 @@
     </nav>
     <main id="main" role="main" class="pt-24">
       <!-- Hero / Mission -->
-      <section class="py-20 bg-gradient-to-br from-primary-50 via-white to-purple-50">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-          <div class="text-center lg:text-left">
-            <div class="inline-flex items-center px-4 py-2 bg-primary-100 rounded-full mb-6 reveal">
-              <span class="w-2 h-2 bg-primary-500 rounded-full mr-2 animate-pulse"></span>
-              <span class="text-primary-700 text-sm font-medium">Secure</span>
+      <section class="relative">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-purple-50"></div>
+        <div class="absolute inset-0 pattern-dots opacity-30"></div>
+        <div class="absolute top-20 right-0 w-[600px] h-[600px] bg-primary-200/30 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-200/30 rounded-full blur-3xl animate-float-delayed"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="text-center lg:text-left reveal">
+              <div class="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-sm border border-indigo-100 mb-8 animate-fade-in-up">
+                <span class="w-2 h-2 bg-primary-500 rounded-full mr-2 animate-pulse"></span>
+                <span class="text-primary-700 text-sm font-semibold tracking-wide uppercase">Our Mission</span>
+              </div>
+              <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 mb-8 leading-tight">
+                We make teams <br>
+                <span class="gradient-text">unstopabble.</span>
+              </h1>
+              <p class="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                TeamBoard is the bridge between chaotic workflows and streamlined success. We combine powerful Kanban management with military-grade security for teams that refuse to compromise.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a href="#story" class="btn-primary px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-500/25 transition-all inline-flex items-center justify-center">
+                Read our story
+                </a>
+                <a href="#team" class="px-8 py-4 bg-white text-gray-700 font-semibold rounded-xl border border-gray-200 hover:border-primary-200 hover:bg-primary-50 transition-all inline-flex items-center justify-center">
+                Meet the team
+                </a>
+              </div>
             </div>
-            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">We make teams more <span class="gradient-text block">productive —</span> securely.</h1>
-            <p class="text-lg text-gray-600 mb-6">TeamBoard combines Kanban project management, real-time collaboration, and a built-in secure credentials vault — designed for agencies, engineering teams, and enterprises that need to move fast without sacrificing security.</p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-primary-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                </svg>
-                <span class="text-gray-700">Trusted workflows for teams of all sizes</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-primary-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v4a1 1 0 001 1h3"/>
-                </svg>
-                <span class="text-gray-700">Secure credentials with role-based access</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-primary-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857"/>
-                </svg>
-                <span class="text-gray-700">Real-time updates and collaboration</span>
-              </li>
-            </ul>
-            <div class="flex gap-4">
-              <a href="contact.html" class="btn-primary px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700">Request a demo</a>
-              <a href="features.html" class="px-6 py-3 rounded-lg border border-gray-200 text-gray-700 hover:bg-primary-50">View features</a>
+            <div class="relative reveal stagger-2 lg:h-[600px] hidden lg:block">
+              <!-- Abstract visual representation of collaboration -->
+              <div class="relative w-full h-full">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-full opacity-10 animate-pulse-slow"></div>
+                <!-- Floating Cards -->
+                <div class="absolute top-20 right-10 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 animate-float z-20 max-w-xs">
+                  <div class="flex items-center gap-4 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="font-bold text-gray-900">Project Shipped</div>
+                      <div class="text-xs text-gray-500">Just now</div>
+                    </div>
+                  </div>
+                  <div class="w-full bg-gray-100 rounded-full h-2 mb-2">
+                    <div class="bg-green-500 h-2 rounded-full w-full"></div>
+                  </div>
+                </div>
+                <div class="absolute bottom-32 left-0 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 animate-float-delayed z-20 max-w-xs">
+                  <div class="flex items-center gap-3 mb-2">
+                    <div class="flex -space-x-2">
+                      <div class="w-8 h-8 rounded-full bg-red-400 border-2 border-white"></div>
+                      <div class="w-8 h-8 rounded-full bg-blue-400 border-2 border-white"></div>
+                      <div class="w-8 h-8 rounded-full bg-yellow-400 border-2 border-white"></div>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700">Team Active</span>
+                  </div>
+                  <p class="text-xs text-gray-500">Collaborating on "Q4 Roadmap"</p>
+                </div>
+                <!-- Central Image/Graphic Placeholder -->
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-96 bg-gray-900 rounded-3xl rotate-[-6deg] shadow-2xl border-4 border-white overflow-hidden z-10">
+                  <!-- Minimal UI Mockup -->
+                  <div class="p-4 border-b border-gray-800 flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <div class="p-4 space-y-3">
+                    <div class="h-2 bg-gray-800 rounded w-3/4"></div>
+                    <div class="h-2 bg-gray-800 rounded w-1/2"></div>
+                    <div class="grid grid-cols-2 gap-2 mt-4">
+                      <div class="h-20 bg-gray-800 rounded mx-auto w-full"></div>
+                      <div class="h-20 bg-gray-800 rounded mx-auto w-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-            <h3 class="text-lg font-bold mb-4">By the numbers</h3>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="text-center">
-                <div class="text-3xl font-bold text-gray-900"><span class="counter" data-target="10000">0</span>+</div>
-                <div class="text-sm text-gray-500">Projects Managed</div>
-              </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-gray-900"><span class="counter" data-target="500">0</span>+</div>
-                <div class="text-sm text-gray-500">Happy Teams</div>
-              </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-gray-900"><span class="counter" data-target="99">0</span>.9%</div>
-                <div class="text-sm text-gray-500">Uptime</div>
-              </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-gray-900">24/7</div>
-                <div class="text-sm text-gray-500">Support</div>
-              </div>
+          <!-- Stats Row -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 border-t border-gray-100 pt-10">
+            <div class="text-center">
+              <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-2"><span class="counter" data-target="10000">0</span>+</div>
+              <div class="text-sm font-medium text-gray-500 uppercase tracking-widest">Projects</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-2"><span class="counter" data-target="500">0</span>+</div>
+              <div class="text-sm font-medium text-gray-500 uppercase tracking-widest">Teams</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-2"><span class="counter" data-target="99">0</span>.9%</div>
+              <div class="text-sm font-medium text-gray-500 uppercase tracking-widest">Uptime</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-2">24/7</div>
+              <div class="text-sm font-medium text-gray-500 uppercase tracking-widest">Support</div>
             </div>
           </div>
         </div>
@@ -459,17 +504,26 @@
             </p>
           </div>
           <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6">
-              <h3 class="font-semibold mb-2">Security-first</h3>
-              <p class="text-gray-600 text-sm">AES-256 encryption, role-based access, and detailed audit logs.</p>
+            <div class="bg-gradient-to-br to-purple-50 to-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 relative overflow-hidden group">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-primary-50 rounded-full -mr-10 -mt-10 transition-transform ">
+              </div>
+              <h3 class="relative z-10 font-semibold text-gray-900 mb-2">Security-first</h3>
+              <p class="relative z-10 text-gray-600 text-sm">AES-256 encryption, role-based access, and detailed audit logs.</p>
             </div>
-            <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6">
-              <h3 class="font-semibold mb-2">User-first UX</h3>
-              <p class="text-gray-600 text-sm">Intuitive interfaces and fast workflows to keep teams focused.</p>
+            <div class="bg-gradient-to-br to-purple-50 to-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 relative overflow-hidden group">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-primary-50 rounded-full -mr-10 -mt-10 transition-transform ">
+              </div>
+              <h3 class="relative z-10 font-semibold text-gray-900 mb-2">User-first UX</h3>
+              <p class="relative z-10 text-gray-600 text-sm">Intuitive interfaces and fast workflows to keep teams focused.</p>
             </div>
-            <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6">
-              <h3 class="font-semibold mb-2">Transparent pricing</h3>
-              <p class="text-gray-600 text-sm">No per-seat surprises — predictable plans with full feature access.</p>
+            <div class="bg-gradient-to-br to-purple-50 to-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 relative overflow-hidden group">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-primary-50 rounded-full -mr-10 -mt-10 transition-transform ">
+              </div>
+              <h3 class="relative z-10 font-semibold text-gray-900 mb-2">Transparent pricing</h3>
+              <p class="relative z-10 text-gray-600 text-sm">No per-seat surprises — predictable plans with full feature access.</p>
             </div>
           </div>
         </div>
@@ -487,91 +541,255 @@
             </p>
           </div>
           <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-2xl p-6 shadow-sm">
-              <h3 class="font-semibold mb-2">Authentication & User Management</h3>
-              <p class="text-gray-600 text-sm">JWT-based auth, role-based access control, and profile management to keep teams organized and secure.</p>
+            <div class="bg-gradient-to-br to-purple-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 relative overflow-hidden">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-primary-50 rounded-full -mr-10 -mt-10 transition-transform z-0">
+              </div>
+              <h3 class="relative z-10 font-semibold text-gray-900 mb-2">Authentication & User Management</h3>
+              <p class="relative z-10 text-gray-600 text-sm">JWT-based auth, role-based access control, and profile management to keep teams organized and secure.</p>
             </div>
-            <div class="bg-white rounded-2xl p-6 shadow-sm">
-              <h3 class="font-semibold mb-2">Project & Task Management</h3>
-              <p class="text-gray-600 text-sm">Kanban-style boards, drag-and-drop, assignments, priorities, and due dates for predictable delivery.</p>
+            <div class="bg-gradient-to-br to-purple-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 relative overflow-hidden group">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-primary-50 rounded-full -mr-10 -mt-10 transition-transform ">
+              </div>
+              <h3 class="relative z-10 font-semibold text-gray-900 mb-2">Project & Task Management</h3>
+              <p class="relative z-10 text-gray-600 text-sm">Kanban-style boards, drag-and-drop, assignments, priorities, and due dates for predictable delivery.</p>
             </div>
-            <div class="bg-white rounded-2xl p-6 shadow-sm">
-              <h3 class="font-semibold mb-2">Real-time Notifications & Email</h3>
-              <p class="text-gray-600 text-sm">WebSocket-powered updates plus email notifications for invites, assignments, and critical alerts.</p>
+            <div class="bg-gradient-to-br to-purple-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 relative overflow-hidden group">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-primary-50 rounded-full -mr-10 -mt-10 transition-transform ">
+              </div>
+              <h3 class="relative z-10 font-semibold text-gray-900 mb-2">Real-time Notifications & Email</h3>
+              <p class="relative z-10 text-gray-600 text-sm">WebSocket-powered updates plus email notifications for invites, assignments, and critical alerts.</p>
             </div>
           </div>
         </div>
       </section>
       <!-- Timeline / Milestones -->
-      <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8">
-          <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider reveal">Timeline</span>
+      <section id="story" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-20">
+            <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider reveal">Our Journey</span>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6 reveal stagger-1">
-              Our <span class="gradient-text">story</span>
+              From frustration to <span class="gradient-text">innovation</span>
             </h2>
             <p class="text-lg text-gray-600 reveal stagger-2">
-              Built by engineers who wanted fewer tools and more outcomes. A timeline of our key milestones.
+              We built TeamBoard because we were tired of choosing between simple but underpowered tools and complex enterprise bloatware.
             </p>
           </div>
-          <ol class="space-y-8">
-            <li class="bg-white rounded-xl p-6 shadow-sm">
-              <div class="flex items-center justify-between mb-2">
-                <h4 class="font-semibold">2019 — Founded</h4>
-                <span class="text-sm text-gray-500">Seed</span>
+          <div class="relative">
+            <!-- Vertical Line -->
+            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-100"></div>
+            <div class="space-y-12">
+              <!-- Timeline Item 1 -->
+              <div class="relative flex flex-col md:flex-row items-center justify-between group reveal">
+                <div class="t-line-left md:w-5/12 order-2 md:order-1 text-center md:text-right p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden group">
+                  <div
+                    class="absolute top-0 left-0 w-32 h-32 bg-primary-50 rounded-full -ml-10 -mt-10 transition-transform ">
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">2019</h3>
+                  <div class="text-primary-600 font-semibold mb-2">The Beginning</div>
+                  <p class="text-gray-600">Founded by three frustrated engineers in a garage. We launched the first prototype focused purely on speed and Kanban basics.</p>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-primary-500 z-10 hidden md:flex items-center justify-center">
+                  <div class="w-3 h-3 bg-primary-500 rounded-full"></div>
+                </div>
+                <div class="md:w-5/12 order-1 md:order-2"></div>
               </div>
-              <p class="text-gray-600 text-sm">Our founding team launched the first prototype focused on Kanban and secure credentials.</p>
-            </li>
-            <li class="bg-white rounded-xl p-6 shadow-sm">
-              <div class="flex items-center justify-between mb-2">
-                <h4 class="font-semibold">2021 — Real-time collaboration</h4>
-                <span class="text-sm text-gray-500">Product</span>
+              <!-- Timeline Item 2 -->
+              <div class="relative flex flex-col md:flex-row items-center justify-between group reveal stagger-1">
+                <div class="md:w-5/12 order-2 md:order-1"></div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-primary-500 z-10 hidden md:flex items-center justify-center">
+                  <div class="w-3 h-3 bg-primary-500 rounded-full"></div>
+                </div>
+                <div class="t-line-right md:w-5/12 order-2 md:order-2 text-center md:text-left p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden group">
+                  <div
+                    class="absolute top-0 right-0 w-32 h-32 bg-primary-50 rounded-full -mr-10 -mt-10 transition-transform ">
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">2021</h3>
+                  <div class="text-primary-600 font-semibold mb-2">Going Real-Time</div>
+                  <p class="text-gray-600">Remote work exploded. We pivoted to real-time collaboration, introducing WebSocket-powered live updates that changed the game.</p>
+                </div>
               </div>
-              <p class="text-gray-600 text-sm">We introduced WebSocket-powered live updates and team mentions.</p>
-            </li>
-            <li class="bg-white rounded-xl p-6 shadow-sm">
-              <div class="flex items-center justify-between mb-2">
-                <h4 class="font-semibold">2023 — Credentials vault</h4>
-                <span class="text-sm text-gray-500">Security</span>
+              <!-- Timeline Item 3 -->
+              <div class="relative flex flex-col md:flex-row items-center justify-between group reveal stagger-2">
+                <div class="t-line-left md:w-5/12 order-2 md:order-1 text-center md:text-right p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden group">
+                  <div
+                    class="absolute top-0 left-0 w-32 h-32 bg-primary-50 rounded-full -ml-10 -mt-10 transition-transform ">
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">2023</h3>
+                  <div class="text-primary-600 font-semibold mb-2">Security First</div>
+                  <p class="text-gray-600">Enterprises came knocking. We launched the Credentials Vault and advanced RBAC, becoming the secure choice for agencies and production teams.</p>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-primary-500 z-10 hidden md:flex items-center justify-center">
+                  <div class="w-3 h-3 bg-primary-500 rounded-full"></div>
+                </div>
+                <div class="md:w-5/12 order-1 md:order-2"></div>
               </div>
-              <p class="text-gray-600 text-sm">Launched our secure credentials manager with role-based access and audit trails.</p>
-            </li>
-          </ol>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Team -->
-      <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8">
-          <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider reveal">Teams</span>
+      <section id="team" class="py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-20">
+            <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider reveal">Our Team</span>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6 reveal stagger-1">
-              Leadership & <span class="gradient-text">core team</span>
+              Meet the <span class="gradient-text">builders</span>
             </h2>
             <p class="text-lg text-gray-600 reveal stagger-2">
-              Experienced leaders building tooling for product and engineering teams.
+              We are a team of passionate engineers, designers, and managers building the future of work.
             </p>
           </div>
-          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <article class="bg-white rounded-2xl p-6 shadow-sm text-center">
-              <div class="w-20 h-20 rounded-full bg-primary-500 text-white font-bold mx-auto flex items-center justify-center mb-4">AL</div>
-              <div class="font-semibold">Alex Lee</div>
-              <div class="text-xs text-gray-500 mb-3">CEO</div>
-              <p class="text-sm text-gray-600 mb-3">Founder and product strategist focused on security-first platforms.</p>
-              <a href="https://www.linkedin.com/in/alex-lee" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary-600 hover:underline text-sm" aria-label="Alex Lee LinkedIn">LinkedIn</a>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Team Member 1 -->
+            <article class="h-full flex flex-col bg-white rounded-2xl p-8 shadow-lg shadow-gray-300 border border-gray-100 text-center hover:-translate-y-2 transition-all duration-300 group reveal">
+              <div class="relative w-14 h-14 mx-auto mb-6">
+                <div class="absolute inset-0 bg-primary-100 rounded-full animate-pulse-slow"></div>
+                <div class="relative w-full h-full rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white text-sm font-bold shadow-lg">
+                  AL
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Alex Lee</h3>
+              <div class="text-sm font-semibold text-primary-600 mb-4 uppercase tracking-wide">
+                CEO & Founder
+              </div>
+              <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                Former Product Lead at TechGiant. Passionate about productivity and security-first architecture.
+              </p>
+              <!-- Icons pinned to bottom -->
+              <div class="flex justify-center space-x-4 mt-auto">
+                <!-- Facebook -->
+                <a href="#" class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692V11.01h3.128V8.309c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.505 0-1.796.716-1.796 1.764v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+                  </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="#" class="p-2 text-gray-400 hover:text-primary-600 hover:bg-primary-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <!-- Twitter -->
+                <a href="#" class="p-2 text-gray-400 hover:text-blue-400 hover:bg-blue-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                  </svg>
+                </a>
+              </div>
             </article>
-            <article class="bg-white rounded-2xl p-6 shadow-sm text-center">
-              <div class="w-20 h-20 rounded-full bg-purple-500 text-white font-bold mx-auto flex items-center justify-center mb-4">MK</div>
-              <div class="font-semibold">Maria Kim</div>
-              <div class="text-xs text-gray-500 mb-3">Head of Product</div>
-              <p class="text-sm text-gray-600 mb-3">Leads the product team and UX initiatives.</p>
-              <a href="https://www.linkedin.com/in/maria-kim" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary-600 hover:underline text-sm" aria-label="Maria Kim LinkedIn">LinkedIn</a>
+            <!-- Team Member 2 -->
+            <article class="h-full flex flex-col bg-white rounded-2xl p-8 shadow-lg shadow-gray-300 border border-gray-100 text-center hover:-translate-y-2 transition-all duration-300 group reveal">
+              <div class="relative w-14 h-14 mx-auto mb-6">
+                <div class="absolute inset-0 bg-primary-100 rounded-full animate-pulse-slow"></div>
+                <div class="relative w-full h-full rounded-full bg-gradient-to-br from-primary-500 to-indigo-600 flex items-center justify-center text-white text-sm font-bold shadow-lg">
+                  AL
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Alex Lee</h3>
+              <div class="text-sm font-semibold text-primary-600 mb-4 uppercase tracking-wide">
+                CEO & Founder
+              </div>
+              <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                Former Product Lead at TechGiant. Passionate about productivity and security-first architecture.
+              </p>
+              <!-- Icons pinned to bottom -->
+              <div class="flex justify-center space-x-4 mt-auto">
+                <!-- Facebook -->
+                <a href="#" class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692V11.01h3.128V8.309c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.505 0-1.796.716-1.796 1.764v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+                  </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="#" class="p-2 text-gray-400 hover:text-primary-600 hover:bg-primary-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <!-- Twitter -->
+                <a href="#" class="p-2 text-gray-400 hover:text-blue-400 hover:bg-blue-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                  </svg>
+                </a>
+              </div>
             </article>
-            <article class="bg-white rounded-2xl p-6 shadow-sm text-center">
-              <div class="w-20 h-20 rounded-full bg-green-500 text-white font-bold mx-auto flex items-center justify-center mb-4">JD</div>
-              <div class="font-semibold">James Davis</div>
-              <div class="text-xs text-gray-500 mb-3">CTO</div>
-              <p class="text-sm text-gray-600 mb-3">Builds the platform and leads engineering excellence.</p>
-              <a href="https://www.linkedin.com/in/james-davis" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary-600 hover:underline text-sm" aria-label="James Davis LinkedIn">LinkedIn</a>
+            <!-- Team Member 3 -->
+            <article class="h-full flex flex-col bg-white rounded-2xl p-8 shadow-lg shadow-gray-300 border border-gray-100 text-center hover:-translate-y-2 transition-all duration-300 group reveal">
+              <div class="relative w-14 h-14 mx-auto mb-6">
+                <div class="absolute inset-0 bg-primary-100 rounded-full animate-pulse-slow"></div>
+                <div class="relative w-full h-full rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-sm font-bold shadow-lg">
+                  AL
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Alex Lee</h3>
+              <div class="text-sm font-semibold text-primary-600 mb-4 uppercase tracking-wide">
+                CEO & Founder
+              </div>
+              <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                Former Product Lead at TechGiant. Passionate about productivity and security-first architecture.
+              </p>
+              <!-- Icons pinned to bottom -->
+              <div class="flex justify-center space-x-4 mt-auto">
+                <!-- Facebook -->
+                <a href="#" class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692V11.01h3.128V8.309c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.505 0-1.796.716-1.796 1.764v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+                  </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="#" class="p-2 text-gray-400 hover:text-primary-600 hover:bg-primary-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <!-- Twitter -->
+                <a href="#" class="p-2 text-gray-400 hover:text-blue-400 hover:bg-blue-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <!-- Team Member 4 -->
+            <article class="h-full flex flex-col bg-white rounded-2xl p-8 shadow-lg shadow-gray-300 border border-gray-100 text-center hover:-translate-y-2 transition-all duration-300 group reveal">
+              <div class="relative w-14 h-14 mx-auto mb-6">
+                <div class="absolute inset-0 bg-primary-100 rounded-full animate-pulse-slow"></div>
+                <div class="relative w-full h-full rounded-full bg-gradient-to-br from-primary-500 to-indigo-600 flex items-center justify-center text-white text-sm font-bold shadow-lg">
+                  AL
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Alex Lee</h3>
+              <div class="text-sm font-semibold text-primary-600 mb-4 uppercase tracking-wide">
+                CEO & Founder
+              </div>
+              <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                Former Product Lead at TechGiant. Passionate about productivity and security-first architecture.
+              </p>
+              <!-- Icons pinned to bottom -->
+              <div class="flex justify-center space-x-4 mt-auto">
+                <!-- Facebook -->
+                <a href="#" class="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692V11.01h3.128V8.309c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.505 0-1.796.716-1.796 1.764v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+                  </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="#" class="p-2 text-gray-400 hover:text-primary-600 hover:bg-primary-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <!-- Twitter -->
+                <a href="#" class="p-2 text-gray-400 hover:text-blue-400 hover:bg-blue-50 rounded-full transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                  </svg>
+                </a>
+              </div>
             </article>
           </div>
         </div>
